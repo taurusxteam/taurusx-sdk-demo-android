@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name="com.taurusx.demo.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="false"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.taurusx.demo.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.taurusx.demo.BannerActivity"/>
+        <activity android:name="com.taurusx.demo.NativeActivity"/>
+        <activity android:name="com.taurusx.demo.InterstialActivity"/>
+        <activity android:name="com.taurusx.demo.RewardAdActivity"/>
+        <activity android:name="com.taurusx.demo.SplashActivity"/>
+
+    </application>
+
+</manifest>

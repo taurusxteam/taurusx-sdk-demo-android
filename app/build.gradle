@@ -1,0 +1,32 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace 'com.taurusx.demo'
+
+    compileSdkVersion 34
+    defaultConfig {
+        applicationId "com.pub.test.app.android"
+        minSdkVersion 19
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.aar'], dir: 'libs')
+    implementation 'androidx.core:core-ktx:1.5.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.5.0"
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation "com.taurusx.tax:ads:1.7.2"
+}
+
+configurations.all {
+}
